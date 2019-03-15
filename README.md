@@ -6,7 +6,9 @@ var  myDate = new Date();
 var monthFirst = new Date(myDate.getFullYear(), parseInt(myDate.getMonth()), 1).getDay(); </br>
 ### 获取本月天数(获取后一个月的0日即前一月的最后一日)
 var totalDay=(new Date(myDate.getFullYear(), parseInt(myDate.getMonth() + 1), 0)).getDate();</br>
-
+### 日期格式
+new Date().toLocaleDateString().replace(/\//g,"-")+" "+new Date().toLocaleTimeString().slice(2)//
+"2019-3-15 2:43:27"
 ## 关于继承
   ### 构造函数的继承
 
